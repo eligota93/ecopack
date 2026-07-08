@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+
+<html lang="sq">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="EcoPack SHPK prodhon ambalazhe të personalizuara, çanta kartoni, kuti, gota, etiketa dhe zgjidhje branding për biznese në Shqipëri." name="description"/>
+<title>EcoPack | SHPK — Ambalazhe të personalizuara</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&amp;display=swap" rel="stylesheet"/>
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{
+  --green:#0f2f22;
+  --green-2:#123524;
+  --kraft:#b89a7c;
+  --beige:#f5f1ea;
+  --off:#faf9f6;
+  --text:#102b22;
+  --border:#ded8cf;
+  --muted:#7b8982;
+  --white:#ffffff;
+  --header-h:72px;
+  --container:1180px;
+  --pad:28px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{
+  margin:0;
+  font-family:"Poppins",Arial,sans-serif;
+  font-weight:300;
+  color:var(--text);
+  background:var(--off);
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+body.menu-open{overflow:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0}
+
+::selection{background:var(--kraft);color:var(--green)}
+
+.skip-link{
+  position:absolute;
+  top:-120px;
+  left:var(--pad);
+  z-index:1000;
+  background:var(--green);
+  color:var(--off);
+  padding:12px 16px;
+  border:1px solid var(--kraft);
+}
+.skip-link:focus{top:12px}
+
+.container{
+  width:min(var(--container),calc(100% - (var(--pad) * 2)));
+  margin-inline:auto;
+}
+.narrow{max-width:820px}
+
+.site-header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+  z-index:1000;
+  background:rgba(250,249,246,.96);
+  border-bottom:1px solid var(--border);
+  transition:background .25s ease,border-color .25s ease;
+  backdrop-filter:blur(14px);
+}
+.site-header.is-scrolled{background:rgba(250,249,246,.99);border-color:#cfc6ba}
+main{padding-top:var(--header-h)}
+.header-inner{
+  height:var(--header-h);
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:center;
+  gap:16px;
+}
+.logo{
+  display:inline-flex;
+  align-items:baseline;
+  gap:3px;
+  letter-spacing:.08em;
+  line-height:1;
+  white-space:nowrap;
+}
+.logo-eco,.logo-pack{font-size:18px;font-weight:400;letter-spacing:.08em}
+.logo-eco{color:var(--green-2)}
+.logo-pack{color:var(--kraft)}
+.logo-line{color:var(--border);font-size:14px;margin-inline:5px}
+.logo-shpk{color:var(--muted);font-size:10px;letter-spacing:.36em;font-weight:300}
+.desktop-nav,.header-cta{display:none}
+.menu-toggle{
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--border);
+}
+.menu-toggle span{
+  display:block;
+  width:18px;
+  height:1px;
+  background:var(--text);
+  transition:transform .25s ease;
+}
+.menu-toggle span+span{margin-top:-15px}
+.menu-toggle.is-open span:first-child{transform:translateY(8px) rotate(45deg)}
+.menu-toggle.is-open span:last-child{transform:translateY(-8px) rotate(-45deg)}
+.mobile-panel{
+  display:grid;
+  grid-template-rows:0fr;
+  transition:grid-template-rows .26s ease;
+  border-top:0 solid var(--border);
+  overflow:hidden;
+}
+.mobile-panel.is-open{grid-template-rows:1fr;border-top:1px solid var(--border)}
+.mobile-panel nav{
+  min-height:0;
+  overflow:hidden;
+  width:min(var(--container),calc(100% - (var(--pad) * 2)));
+  margin:auto;
+  padding:8px 0 18px;
+  display:grid;
+  gap:0;
+}
+.mobile-panel a{
+  display:block;
+  padding:15px 0;
+  border-bottom:1px solid var(--border);
+  font-size:13px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.mobile-panel .mobile-cta{
+  margin-top:12px;
+  text-align:center;
+  color:var(--green);
+  background:transparent;
+  border:1px solid var(--kraft);
+}
+
+.section{
+  padding:84px 0;
+  background:var(--off);
+  border-bottom:1px solid var(--border);
+}
+.section:nth-of-type(even){background:var(--beige)}
+.section-label{
+  margin:0 0 18px;
+  color:var(--kraft);
+  font-size:11px;
+  letter-spacing:.26em;
+  text-transform:uppercase;
+  font-weight:400;
+}
+.section-label.light{color:#d7b895}
+h1,h2,h3,p{margin-top:0}
+h1,h2{
+  font-weight:300;
+  letter-spacing:-.045em;
+  line-height:1.03;
+}
+h1{font-size:clamp(43px,12vw,78px);color:var(--off);margin-bottom:24px;max-width:760px}
+h1 em{
+  color:var(--kraft);
+  font-style:italic;
+  font-weight:300;
+}
+h2{font-size:clamp(34px,8.5vw,64px);margin-bottom:22px;color:var(--text)}
+.slider-title{font-size:clamp(28px,7.2vw,52px);line-height:1.06;letter-spacing:-.04em;max-width:760px}
+.slider-title .title-line{display:block}
+.slider-title .title-line + .title-line{margin-top:.06em}
+.boxes-title{font-size:clamp(28px,7vw,50px);line-height:1.06;letter-spacing:-.04em;max-width:700px}
+.boxes-title .title-line{display:block}
+.boxes-title .title-line + .title-line{margin-top:.06em}
+.other-products-title{font-size:clamp(26px,6.6vw,46px);line-height:1.08;letter-spacing:-.04em;max-width:640px}
+.branding-title{font-size:clamp(26px,6.6vw,46px);line-height:1.08;letter-spacing:-.04em;max-width:680px}
+h3{font-weight:400;letter-spacing:.08em;text-transform:uppercase;line-height:1.28}
+p{color:var(--muted)}
+.section-intro{font-size:18px;line-height:1.75;color:#596b62;margin-bottom:0}
+.eyebrow-small{
+  display:block;
+  margin-bottom:18px;
+  color:var(--kraft);
+  font-size:11px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+}
+
+.hero{
+  min-height:calc(100svh - var(--header-h));
+  padding:60px 0 72px;
+  display:grid;
+  align-items:center;
+  color:var(--off);
+  background:
+    linear-gradient(135deg,var(--green),#0a2119 72%);
+  border-bottom:1px solid rgba(184,154,124,.38);
+}
+.hero-inner{
+  display:grid;
+  gap:44px;
+  align-items:center;
+}
+
+.hero-title-line{
+  display:block;
+}
+.hero-title-line + .hero-title-line{
+  margin-top:.04em;
+}
+
+.hero-lead{
+  max-width:680px;
+  color:#d4ddd8;
+  font-size:17px;
+  line-height:1.8;
+}
+.hero-benefits{
+  display:grid;
+  gap:14px;
+  margin:30px 0;
+}
+.hero-benefits p{
+  position:relative;
+  margin:0;
+  padding-left:34px;
+  color:#e5e9e6;
+  font-size:14px;
+  line-height:1.7;
+}
+.hero-benefits span{
+  position:absolute;
+  left:0;
+  top:4px;
+  width:18px;
+  height:18px;
+  border:1px solid rgba(184,154,124,.86);
+}
+.hero-benefits span::after{
+  content:"";
+  position:absolute;
+  width:7px;
+  height:4px;
+  border-left:1px solid var(--off);
+  border-bottom:1px solid var(--off);
+  transform:rotate(-45deg);
+  left:4px;
+  top:5px;
+}
+.button-row{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+.btn{
+  min-height:52px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:15px 22px;
+  border:1px solid transparent;
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-weight:400;
+  transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--kraft);border-color:var(--kraft);color:var(--green)}
+.btn-primary:hover{background:#c7a98a;border-color:#c7a98a}
+.btn-outline{border-color:var(--border);color:var(--text)}
+.light-outline{color:var(--off);border-color:rgba(250,249,246,.36)}
+.light-outline:hover{border-color:var(--kraft);color:var(--kraft)}
+.hero-image{
+  margin:0;
+  border:1px solid rgba(184,154,124,.58);
+  padding:12px;
+  background:rgba(255,255,255,.03);
+  overflow:visible;
+}
+.hero-visual{
+  position:relative;
+  width:100%;
+}
+.hero-base-image{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+}
+.hero-overlay-products{
+  position:absolute;
+  left:50%;
+  bottom:-2%;
+  transform:translateX(-50%);
+  width:min(96%,820px);
+  z-index:2;
+  pointer-events:none;
+  filter:drop-shadow(0 20px 28px rgba(0,0,0,.22));
+}
+.hero-image figcaption{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:13px 0 0;
+  color:#d4ddd8;
+  font-size:10px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+
+.two-column{display:grid;grid-template-columns:1fr;gap:18px;margin-top:38px}
+.editorial-card{
+  border:1px solid var(--border);
+  padding:28px;
+  background:rgba(250,249,246,.5);
+}
+.editorial-card p{margin-bottom:0;line-height:1.85;color:#596b62}
+
+.about-showcase{
+  margin-top:36px;
+}
+.about-showcase__frame{
+  position:relative;
+  border:1px solid var(--border);
+  padding:10px;
+  background:rgba(250,249,246,.58);
+}
+.about-showcase__frame img{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+.about-showcase__badge{
+  position:absolute;
+  top:24px;
+  left:24px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 16px;
+  background:rgba(250,249,246,.92);
+  border:1px solid rgba(222,216,207,.96);
+  color:var(--green);
+  font-size:10px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  backdrop-filter:blur(10px);
+}
+.about-showcase__badge::before{
+  content:"";
+  width:10px;
+  height:10px;
+  border:1px solid var(--kraft);
+  background:rgba(184,154,124,.18);
+}
+.about-showcase__panel{
+  position:relative;
+  width:min(92%,560px);
+  margin:-42px 0 0 auto;
+  padding:28px;
+  background:var(--off);
+  border:1px solid var(--border);
+  box-shadow:0 20px 40px rgba(15,47,34,.08);
+}
+.about-showcase__panel h3{
+  margin:0 0 12px;
+  color:var(--text);
+  font-size:24px;
+  letter-spacing:-.03em;
+  text-transform:none;
+  line-height:1.18;
+}
+.about-showcase__panel p{
+  margin:0;
+  color:#596b62;
+  line-height:1.85;
+}
+.about-showcase__points{
+  display:grid;
+  gap:12px;
+  margin-top:22px;
+}
+.about-showcase__points span{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:var(--text);
+  font-size:12px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  padding-top:12px;
+  border-top:1px solid var(--border);
+}
+.about-showcase__points span::before{
+  content:"";
+  width:11px;
+  height:11px;
+  border:1px solid var(--kraft);
+  flex:0 0 auto;
+}
+
+.slider-section{overflow:hidden}
+.slider-shell{
+  --slider-gap:16px;
+  width:100%;
+  overflow:hidden;
+  padding:18px var(--pad) 6px;
+  margin-top:14px;
+}
+.slider-track{
+  display:flex;
+  width:max-content;
+  animation:marquee 88s linear infinite;
+  will-change:transform;
+}
+.slider-set{
+  display:flex;
+  gap:var(--slider-gap);
+  padding-right:var(--slider-gap);
+}
+.category-card{
+  position:relative;
+  flex:0 0 auto;
+  width:72vw;
+  max-width:330px;
+  min-width:240px;
+  height:430px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  background:var(--beige);
+}
+.category-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:grayscale(.18) saturate(.78) contrast(.94);
+  transition:transform .6s ease,filter .6s ease;
+}
+.category-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top,rgba(15,47,34,.78),rgba(15,47,34,.08) 62%,rgba(250,249,246,.02));
+}
+.category-card__overlay{
+  position:absolute;
+  inset:auto 0 0;
+  z-index:1;
+  padding:22px;
+  color:var(--off);
+}
+.category-card__overlay span{
+  display:block;
+  margin-bottom:12px;
+  color:#d8c0a4;
+  font-size:11px;
+  letter-spacing:.28em;
+}
+.category-card__overlay h3{
+  margin-bottom:8px;
+  color:var(--off);
+  font-size:16px;
+}
+.category-card__overlay p{
+  display:none;
+}
+.box-slider-shell{margin-top:34px;margin-bottom:0}
+.box-slider-shell .slider-track{animation-duration:20s}
+.info-notes{
+  display:grid;
+  gap:10px;
+  margin-top:30px;
+}
+.info-notes span{
+  display:block;
+  padding:14px 0;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  color:var(--text);
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+@keyframes marquee{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+
+.wide-image{
+  position:relative;
+  margin-top:42px;
+  border:1px solid var(--border);
+  padding:10px;
+}
+.wide-image img{
+  width:100%;
+  aspect-ratio:1.18/1;
+  object-fit:cover;
+}
+.wide-image figcaption,
+.branding-image figcaption{
+  position:absolute;
+  top:20px;
+  right:20px;
+  background:rgba(250,249,246,.92);
+  border:1px solid var(--border);
+  color:var(--green);
+  padding:10px 12px;
+  font-size:10px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+.box-list{
+  display:grid;
+  grid-template-columns:1fr;
+  margin-top:36px;
+  border-top:1px solid var(--border);
+}
+.box-item{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:20px;
+  padding:26px 0;
+  border-bottom:1px solid var(--border);
+}
+.box-item h3{font-size:17px;margin-bottom:8px;color:var(--text)}
+.box-item p{margin:0;max-width:510px}
+.tiny-square{
+  width:13px;
+  height:13px;
+  border:1px solid var(--kraft);
+  margin-top:4px;
+}
+.product-grid{
+  display:grid;
+  gap:16px;
+  margin-top:30px;
+}
+.product-card{
+  border:1px solid var(--border);
+  padding:28px;
+  min-height:250px;
+  display:flex;
+  flex-direction:column;
+  background:rgba(250,249,246,.4);
+}
+.product-card>span{
+  color:var(--kraft);
+  font-size:11px;
+  letter-spacing:.2em;
+  margin-bottom:32px;
+}
+.product-card h3{font-size:19px;margin-bottom:12px}
+.product-card p{margin-bottom:26px}
+.product-card__meta{
+  margin-top:auto;
+  padding-top:18px;
+  border-top:1px solid var(--border);
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+}
+.product-card__meta small{
+  color:var(--muted);
+  font-size:10px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+
+
+.product-slider-shell{
+  margin-top:30px;
+  margin-bottom:0;
+}
+.product-slider-shell .slider-track{
+  animation-duration:78s;
+}
+.product-slider-shell .product-card{
+  width:clamp(260px,48vw,340px);
+  min-height:270px;
+  flex:0 0 auto;
+}
+@media (max-width:759px){
+  .product-slider-shell .product-card{
+    width:72vw;
+    min-height:250px;
+  }
+}
+
+.branding-layout{display:grid;gap:34px;align-items:center}
+.branding-image{
+  position:relative;
+  margin:0;
+  border:1px solid var(--border);
+  padding:10px;
+}
+.branding-image img{width:100%;aspect-ratio:1/1.05;object-fit:cover}
+.branding-copy blockquote{
+  margin:0 0 22px;
+  padding-left:18px;
+  border-left:1px solid var(--kraft);
+  color:var(--green);
+  font-size:22px;
+  line-height:1.45;
+  letter-spacing:-.02em;
+}
+.icon-grid{display:grid;gap:16px;margin-top:42px}
+.icon-card{
+  border-top:1px solid var(--border);
+  padding-top:24px;
+}
+.line-icon{
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--border);
+  margin-bottom:22px;
+}
+.line-icon svg{width:24px;height:24px;fill:none;stroke:var(--green);stroke-width:1.25;stroke-linecap:square;stroke-linejoin:miter}
+.icon-card h3{font-size:16px;margin-bottom:10px}
+.icon-card p{margin:0}
+
+.service-list{
+  margin-top:26px;
+  border-top:1px solid var(--border);
+}
+.service-row{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+  padding:26px 0;
+  border-bottom:1px solid var(--border);
+}
+.service-row span{color:var(--kraft);font-size:11px;letter-spacing:.2em}
+.service-row h3{font-size:17px;margin:0;color:var(--text)}
+.service-row p{margin:0}
+.centered-section{text-align:left}
+.criteria-title{font-size:clamp(28px,6.8vw,48px);line-height:1.08;letter-spacing:-.04em;max-width:560px}
+.criteria-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.criteria-card{
+  border:1px solid var(--border);
+  padding:20px;
+  background:rgba(250,249,246,.36);
+}
+.criteria-card span{display:block;color:var(--kraft);font-size:10px;letter-spacing:.2em;margin-bottom:16px}
+.criteria-card h3{font-size:14px;line-height:1.22;margin-bottom:10px}
+.criteria-card p{margin:0;font-size:14px;line-height:1.5}
+
+.process-title{font-size:clamp(24px,5.8vw,44px);line-height:1.08;letter-spacing:-.04em;max-width:none;white-space:nowrap}
+
+.process-grid{
+  position:relative;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:0;
+  margin-top:28px;
+}
+.process-step{
+  position:relative;
+  padding:0 0 34px 44px;
+  border-left:1px solid var(--border);
+}
+.process-step:last-child{padding-bottom:0}
+.step-number{
+  position:absolute;
+  left:-19px;
+  top:0;
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  background:var(--off);
+  border:1px solid var(--kraft);
+  color:var(--green);
+  font-size:11px;
+  letter-spacing:.12em;
+}
+.process-step h3{font-size:17px;margin-bottom:10px}
+.process-step p{margin:0}
+.cta-box{
+  margin-top:54px;
+  border:1px solid var(--border);
+  padding:30px;
+  display:grid;
+  gap:24px;
+  align-items:center;
+  background:rgba(250,249,246,.44);
+}
+.cta-box h3{font-size:22px;margin-bottom:10px}
+.cta-box p{margin:0}
+.btn-chat{width:100%;gap:10px;white-space:normal;text-align:center}
+
+.contact-layout{display:grid;gap:36px}
+.contact-rows{display:grid;gap:0;margin-top:28px;border-top:1px solid var(--border)}
+.contact-rows article{
+  display:grid;
+  grid-template-columns:44px 1fr;
+  gap:16px;
+  padding:22px 0;
+  border-bottom:1px solid var(--border);
+}
+.contact-icon{
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--border);
+  color:var(--kraft);
+  font-size:14px;
+}
+.contact-rows h3{font-size:13px;margin-bottom:6px}
+.contact-rows p{margin:0}
+.contact-rows a:hover{color:var(--kraft)}
+.action-row{display:grid;gap:10px;margin-top:24px}
+.action-row a{
+  display:flex;
+  min-height:48px;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--border);
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  transition:border-color .2s ease,color .2s ease,background .2s ease;
+}
+.action-row a:hover{border-color:var(--green);color:var(--green)}
+.action-row .accent{border-color:var(--kraft);color:var(--green)}
+.request-form{
+  border:1px solid var(--border);
+  padding:26px;
+  background:rgba(250,249,246,.64);
+}
+.form-heading{padding-bottom:22px;border-bottom:1px solid var(--border);margin-bottom:22px}
+.form-heading h3{font-size:22px;margin-bottom:8px}
+.form-heading p{margin:0}
+.form-grid{display:grid;gap:16px}
+label{
+  display:grid;
+  gap:8px;
+  color:var(--green);
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+input,textarea{
+  width:100%;
+  border:1px solid var(--border);
+  background:var(--off);
+  padding:15px 14px;
+  min-height:52px;
+  outline:0;
+  font-size:14px;
+  letter-spacing:0;
+  text-transform:none;
+  transition:border-color .2s ease,background .2s ease;
+}
+textarea{min-height:154px;resize:vertical}
+input:focus,textarea:focus{border-color:var(--kraft);background:#fffdf9}
+input::placeholder,textarea::placeholder{color:#9aa39e}
+.btn-submit{width:100%;margin-top:18px;background:var(--green);border-color:var(--green);color:var(--off);gap:10px}
+.btn-submit:hover{background:var(--green-2);border-color:var(--green-2)}
+.form-status{min-height:22px;margin:12px 0 0;color:var(--green);font-size:13px}
+.form-status.error{color:#8a3b2f}
+
+.site-footer{
+  background:var(--green);
+  color:var(--off);
+  padding:72px 0 0;
+}
+.footer-grid{display:grid;gap:42px}
+.footer-logo{margin-bottom:22px}
+.site-footer .logo-eco{color:var(--off)}
+.site-footer .logo-pack{color:var(--kraft)}
+.site-footer .logo-line{color:rgba(250,249,246,.35)}
+.site-footer .logo-shpk{color:#b6c0ba}
+.site-footer h3{
+  margin:0 0 18px;
+  color:var(--kraft);
+  font-size:12px;
+  letter-spacing:.24em;
+}
+.site-footer p,.site-footer a{color:#d9e1dd}
+.site-footer p{margin:0 0 10px;max-width:520px}
+.site-footer a{display:block;margin-bottom:11px;transition:color .2s ease}
+.site-footer a:hover{color:var(--kraft)}
+.footer-bottom{
+  margin-top:54px;
+  padding:22px 0;
+  border-top:1px solid rgba(222,216,207,.22);
+  display:grid;
+  gap:18px;
+}
+.footer-bottom p{margin:0;color:#c8d1cc;font-size:13px}
+.back-top{
+  justify-self:start;
+  border:1px solid rgba(184,154,124,.75);
+  color:var(--off);
+  padding:13px 16px;
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  transition:background .2s ease,color .2s ease;
+}
+.back-top:hover{background:var(--kraft);color:var(--green)}
+
+.reveal{
+  opacity:1;
+  transform:none;
+  transition:opacity .65s ease,transform .65s ease;
+}
+.js .reveal{opacity:0;transform:translateY(22px)}
+.js .reveal.is-visible{opacity:1;transform:translateY(0)}
+
+
+@media (max-width:479px){
+  h1{font-size:26px;line-height:1.02;letter-spacing:-.05em;max-width:none}
+  .hero-title-line + .hero-title-line{margin-top:.08em}
+  .about-showcase__badge{left:18px;top:18px;padding:10px 12px;font-size:9px;letter-spacing:.18em}
+  .about-showcase__panel{width:100%;margin:0;padding:22px}
+  .about-showcase__panel h3{font-size:22px}
+}
+
+@media (min-width:480px){
+  :root{--pad:30px}
+  .button-row{flex-direction:row;align-items:center}
+  .btn{width:auto}
+  .category-card{width:48vw;max-width:310px}
+  .action-row{grid-template-columns:repeat(3,1fr)}
+}
+
+@media (min-width:760px){
+  :root{--pad:36px;--header-h:82px}
+  .section{padding:112px 0}
+  .hero{padding:86px 0 96px}
+  .hero-inner{grid-template-columns:minmax(0,1.02fr) minmax(320px,.78fr);gap:58px}
+  .hero-image{align-self:center}
+  .hero-overlay-products{width:min(92%,760px);bottom:-3%}
+  .two-column,.about-grid{grid-template-columns:1fr 1fr;gap:22px}
+  .about-showcase__panel{margin:-72px 34px 0 auto;padding:34px 36px}
+  .wide-image img{aspect-ratio:16/7}
+  .box-list{grid-template-columns:1fr 1fr;column-gap:48px}
+  .box-item:nth-child(odd){border-right:1px solid var(--border);padding-right:34px}
+  .box-item:nth-child(even){padding-left:0}
+  .product-grid{grid-template-columns:1fr 1fr}
+  .branding-layout{grid-template-columns:.92fr 1fr;gap:64px}
+  .icon-grid{grid-template-columns:repeat(3,1fr);gap:28px}
+  .service-row{grid-template-columns:120px minmax(220px,.7fr) minmax(280px,1fr);gap:30px;align-items:start;padding:34px 0}
+  .criteria-grid{grid-template-columns:1fr 1fr}
+  .centered-section{text-align:center}
+  .centered-section .criteria-grid{text-align:left}
+  .process-grid{grid-template-columns:repeat(4,1fr);gap:28px;margin-top:50px}
+  .process-grid::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:19px;
+    height:1px;
+    background:var(--border);
+  }
+  .process-step{border-left:0;padding:0 0 0 0}
+  .step-number{position:relative;left:auto;top:auto;margin-bottom:28px;background:var(--off);z-index:1}
+  .cta-box{grid-template-columns:1fr auto;padding:40px}
+  .btn-chat{width:auto;min-width:292px}
+  .contact-layout{grid-template-columns:.88fr 1.12fr;gap:56px;align-items:start}
+  .form-grid{grid-template-columns:1fr 1fr}
+  .form-grid .full{grid-column:1/-1}
+  .footer-grid{grid-template-columns:1.5fr .75fr 1fr}
+  .footer-bottom{grid-template-columns:1fr auto;align-items:center}
+  .back-top{justify-self:end}
+}
+
+@media (min-width:980px){
+  .header-inner{grid-template-columns:auto 1fr auto;gap:28px}
+  .desktop-nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+  }
+  .desktop-nav a{
+    position:relative;
+    color:var(--text);
+    font-size:12px;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    transition:color .2s ease;
+  }
+  .desktop-nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:-10px;
+    height:1px;
+    background:var(--kraft);
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform .2s ease;
+  }
+  .desktop-nav a:hover{color:var(--kraft)}
+  .desktop-nav a:hover::after{transform:scaleX(1)}
+  .header-cta{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:44px;
+    padding:0 18px;
+    border:1px solid var(--kraft);
+    color:var(--green);
+    font-size:11px;
+    letter-spacing:.16em;
+    transition:background .2s ease,color .2s ease;
+  }
+  .header-cta:hover{background:var(--kraft);color:var(--green)}
+  .menu-toggle,.mobile-panel{display:none}
+  .slider-shell{--slider-gap:20px;padding-left:calc((100vw - min(var(--container), calc(100vw - (var(--pad) * 2)))) / 2);padding-right:0}
+  .category-card{width:308px;height:448px}
+  @media (hover:hover){
+    .slider-shell:hover .slider-track{animation-play-state:paused}
+    .category-card:hover img{transform:scale(1.035);filter:grayscale(.06) saturate(.86) contrast(.98)}
+  }
+}
+
+@media (min-width:1240px){
+  h1{font-size:82px}
+  h2{font-size:66px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
+  .slider-track{animation:none}
+  .reveal{opacity:1;transform:none}
+}
+
+  
+.slider-section .category-card img{
+  object-position:center;
+}
+
+
+@media (max-width:767px){
+  .hero-overlay-products{width:102%;bottom:-4%;}
+}
+
+/* Image-only slideshow cards */
+.category-card::after{
+  display:none;
+}
+.category-card__overlay{
+  display:none;
+}
+.category-card img{
+  filter:none;
+}
+
+
+/* Text ticker under the first category slideshow */
+.text-marquee-shell{
+  width:100%;
+  overflow:hidden;
+  padding:0 var(--pad) 10px;
+  margin:20px 0 4px;
+}
+.text-marquee-track{
+  display:flex;
+  width:max-content;
+  animation:textMarqueeRight 70s linear infinite;
+  will-change:transform;
+}
+.text-marquee-set{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding-right:12px;
+}
+.text-marquee-set span{
+  flex:0 0 auto;
+  border:1px solid var(--border);
+  background:rgba(250,249,246,.5);
+  color:var(--text);
+  padding:12px 18px;
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.text-marquee-shell:hover .text-marquee-track{
+  animation-play-state:paused;
+}
+@keyframes textMarqueeRight{
+  from{transform:translate3d(-50%,0,0)}
+  to{transform:translate3d(0,0,0)}
+}
+@media (max-width:759px){
+  .text-marquee-shell{
+    margin-top:16px;
+    padding-inline:var(--pad);
+  }
+  .text-marquee-set{
+    gap:10px;
+    padding-right:10px;
+  }
+  .text-marquee-set span{
+    padding:11px 14px;
+    font-size:10px;
+    letter-spacing:.14em;
+  }
+}
+
+
+/* Text ticker under boxes slideshow */
+.boxes-text-marquee{
+  margin-top:20px;
+}
+
+
+/* Mobile-only home hero */
+@media (max-width:759px){
+  .hero{
+    min-height:calc(100svh - var(--header-h));
+    padding:44px 0 42px;
+    background:
+      linear-gradient(90deg, rgba(15,47,34,.06) 0%, rgba(15,47,34,.18) 42%, rgba(8,25,18,.78) 100%),
+      url("assets/images/mobile-home-hero.webp") left bottom / cover no-repeat;
+  }
+  .hero-inner{
+    min-height:calc(100svh - var(--header-h) - 86px);
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-end;
+  }
+  .hero-copy{
+    width:min(76%,360px);
+    margin-left:auto;
+    text-align:right;
+    padding-top:18px;
+  }
+  .hero .section-label{
+    text-align:right;
+    margin-left:auto;
+    font-size:9px;
+    line-height:1.6;
+    letter-spacing:.2em;
+  }
+  .hero h1{
+    text-align:right;
+    margin-left:auto;
+    font-size:clamp(30px,9vw,44px);
+    line-height:1.04;
+    letter-spacing:-.055em;
+  }
+  .hero-lead{
+    margin-left:auto;
+    max-width:320px;
+    text-align:right;
+    font-size:14px;
+    line-height:1.65;
+  }
+  .hero-benefits{
+    margin:22px 0;
+    gap:10px;
+  }
+  .hero-benefits p{
+    padding-left:0;
+    padding-right:32px;
+    text-align:right;
+    font-size:12px;
+    line-height:1.55;
+  }
+  .hero-benefits span{
+    left:auto;
+    right:0;
+    top:2px;
+  }
+  .button-row{
+    align-items:flex-end;
+  }
+  .hero .btn{
+    width:min(100%,260px);
+  }
+  .hero-image{
+    display:none;
+  }
+}
+
+
+/* Branding section without image */
+.branding-layout{
+  grid-template-columns:1fr;
+}
+.branding-copy{
+  max-width:760px;
+  margin:0 auto;
+  text-align:left;
+}
+
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Kalo te përmbajtja</a>
+<header class="site-header" data-header="">
+<div class="header-inner container">
+<a aria-label="EcoPack ballina" class="logo" href="#top"><span class="logo-eco">ECO</span><span class="logo-pack">PACK</span><span class="logo-line">|</span><span class="logo-shpk">SHPK</span></a>
+<nav aria-label="Navigimi kryesor" class="desktop-nav">
+<a href="#ballina">Ballina</a>
+<a href="#rreth-nesh">Rreth Nesh</a>
+<a href="#produktet">Produktet</a>
+<a href="#sherbime">Shërbime</a>
+<a href="#kontakti">Kontakti</a>
+</nav>
+<a class="header-cta" href="https://wa.me/355692059212" rel="noopener" target="_blank">POROSIT TANI ↗</a>
+<button aria-expanded="false" aria-label="Hap menunë" class="menu-toggle" data-menu-toggle="" type="button">
+<span></span><span></span>
+</button>
+</div>
+<div class="mobile-panel" data-mobile-panel="">
+<nav aria-label="Navigimi mobil">
+<a href="#ballina">Ballina</a>
+<a href="#rreth-nesh">Rreth Nesh</a>
+<a href="#produktet">Produktet</a>
+<a href="#sherbime">Shërbime</a>
+<a href="#kontakti">Kontakti</a>
+<a class="mobile-cta" href="https://wa.me/355692059212" rel="noopener" target="_blank">POROSIT TANI ↗</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero" id="ballina">
+<div class="hero-inner container">
+<div class="hero-copy reveal">
+<p class="section-label light">EKSPERTËT E AMBALAZHIT • PRODHIM SHQIPTAR</p>
+<h1><span class="hero-title-line">Paketime të personalizuara</span><span class="hero-title-line">për <em>biznesin tuaj</em></span></h1>
+<p class="hero-lead">Prodhojmë çanta, kuti, gota dhe etiketa të personalizuara për biznesin tuaj.</p>
+<div aria-label="Përfitimet kryesore" class="hero-benefits">
+<p><span></span>Dorëzim brenda 24 orëve.</p>
+<p><span></span>Pa kosto klishe.</p>
+<p><span></span>Dizajn me logo pa kosto shtesë.</p>
+</div>
+<div class="button-row">
+<a class="btn btn-primary" href="https://wa.me/355692059212" rel="noopener" target="_blank">POROSIT NË WHATSAPP</a>
+<a class="btn btn-outline light-outline" href="#kontakti">NA KONTAKTONI</a>
+</div>
+</div>
+<figure class="hero-image reveal">
+<div class="hero-visual">
+<img alt="Eco Pack home image" class="hero-base-image" src="assets/images/img-001.webp"/>
+<img alt="Çanta dhe kuti EcoPack" class="hero-overlay-products" loading="eager" src="assets/images/img-002.webp"/>
+</div>
+</figure>
+</div>
+</section>
+<section class="section" id="rreth-nesh">
+<div class="container narrow reveal">
+<p class="section-label">KUSH JEMI NE</p>
+<h2>RRETH NESH</h2>
+<p class="section-intro">EcoPack prodhon ambalazhe të personalizuara për biznese që duan paketim cilësor, praktik dhe profesional.</p>
+</div>
+<div class="container two-column about-grid">
+<article class="editorial-card reveal">
+<span class="eyebrow-small">MISIONI YNË</span>
+<p>T’u ofrojmë bizneseve paketim ekologjik, të personalizuar dhe të dorëzuar shpejt.</p>
+</article>
+<article class="editorial-card reveal">
+<span class="eyebrow-small">PSE JEMI NDRYSHE?</span>
+<p>Shpejtësi, pa kosto klishe dhe mbështetje grafike falas për çdo porosi.</p>
+</article>
+</div>
+<div class="container about-showcase reveal">
+<div class="about-showcase__frame">
+<img alt="Objekti i Eco Pack" src="assets/images/img-003.webp"/>
+<div class="about-showcase__badge">Objekti ynë • Eco Pack</div>
+</div>
+<div class="about-showcase__panel">
+<span class="eyebrow-small">AMBIENTI YNË</span>
+<h3>Qendër moderne për prodhim, shërbim dhe logjistikë</h3>
+<p>Ky është objekti i Eco Pack, ku zhvillojmë prodhimin, personalizimin dhe përgatitjen e porosive për biznese që kërkojnë ambalazh cilësor, të rregullt dhe profesional.</p>
+<div class="about-showcase__points">
+<span>Prodhim dhe personalizim në një vend</span>
+<span>Shërbim i organizuar dhe dorëzim i shpejtë</span>
+<span>Prezencë profesionale që reflekton besueshmëri</span>
+</div>
+</div>
+</div>
+</section>
+<section class="section slider-section" id="produktet">
+<div class="container reveal">
+<p class="section-label">ZGJIDHNI KATEGORINË TUAJ</p>
+<h2 class="slider-title"><span class="title-line">Ne prodhojmë çanta kartoni</span><span class="title-line">të personalizuara për:</span></h2>
+</div>
+<div aria-label="Kategori biznesesh për çanta kartoni të personalizuara" class="slider-shell reveal">
+<div class="slider-track"><div class="slider-set"><article class="category-card"><img alt="Çantë kartoni e personalizuar për ZOIS Hair Pro" loading="lazy" src="assets/images/bags-01.webp"/></article><article class="category-card"><img alt="Qese farmacie e personalizuar për Farmaci Urgjenca" loading="lazy" src="assets/images/bags-02.webp"/></article><article class="category-card"><img alt="Çantë kartoni e personalizuar për Beni Store" loading="lazy" src="assets/images/bags-03.webp"/></article><article class="category-card"><img alt="Çantë kartoni e personalizuar për Yogurteria" loading="lazy" src="assets/images/bags-04.webp"/></article><article class="category-card"><img alt="Çantë kartoni kraft e personalizuar për Fish Time" loading="lazy" src="assets/images/bags-05.webp"/></article><article class="category-card"><img alt="Çantë kartoni e personalizuar për Oh Baby" loading="lazy" src="assets/images/bags-06.webp"/></article><article class="category-card"><img alt="Çantë kartoni kraft e personalizuar për 2 Kitarrat" loading="lazy" src="assets/images/bags-07.webp"/></article><article class="category-card"><img alt="Çantë kartoni e personalizuar për Baby Shop" loading="lazy" src="assets/images/bags-08.webp"/></article><article class="category-card"><img alt="Çantë kartoni e personalizuar për Farmaci Beal" loading="lazy" src="assets/images/bags-09.webp"/></article><article class="category-card"><img alt="Çantë kartoni kraft e personalizuar për Aksa Pizzeri" loading="lazy" src="assets/images/bags-10.webp"/></article><article class="category-card"><img alt="Çantë kartoni kraft e personalizuar për Rafaelo Store" loading="lazy" src="assets/images/bags-11.webp"/></article><article class="category-card"><img alt="Çantë kartoni e personalizuar për Amaiya Pharma" loading="lazy" src="assets/images/bags-12.webp"/></article><article class="category-card"><img alt="Çantë kartoni kraft e personalizuar për Lahuta e Vjetër" loading="lazy" src="assets/images/bags-13.webp"/></article></div><div aria-hidden="true" class="slider-set"><article class="category-card"><img alt="Çantë kartoni e personalizuar për ZOIS Hair Pro" loading="lazy" src="assets/images/bags-01.webp"/></article><article class="category-card"><img alt="Qese farmacie e personalizuar për Farmaci Urgjenca" loading="lazy" src="assets/images/bags-02.webp"/></article><article class="category-card"><img alt="Çantë kartoni e personalizuar për Beni Store" loading="lazy" src="assets/images/bags-03.webp"/></article><article class="category-card"><img alt="Çantë kartoni e personalizuar për Yogurteria" loading="lazy" src="assets/images/bags-04.webp"/></article><article class="category-card"><img alt="Çantë kartoni kraft e personalizuar për Fish Time" loading="lazy" src="assets/images/bags-05.webp"/></article><article class="category-card"><img alt="Çantë kartoni e personalizuar për Oh Baby" loading="lazy" src="assets/images/bags-06.webp"/></article><article class="category-card"><img alt="Çantë kartoni kraft e personalizuar për 2 Kitarrat" loading="lazy" src="assets/images/bags-07.webp"/></article><article class="category-card"><img alt="Çantë kartoni e personalizuar për Baby Shop" loading="lazy" src="assets/images/bags-08.webp"/></article><article class="category-card"><img alt="Çantë kartoni e personalizuar për Farmaci Beal" loading="lazy" src="assets/images/bags-09.webp"/></article><article class="category-card"><img alt="Çantë kartoni kraft e personalizuar për Aksa Pizzeri" loading="lazy" src="assets/images/bags-10.webp"/></article><article class="category-card"><img alt="Çantë kartoni kraft e personalizuar për Rafaelo Store" loading="lazy" src="assets/images/bags-11.webp"/></article><article class="category-card"><img alt="Çantë kartoni e personalizuar për Amaiya Pharma" loading="lazy" src="assets/images/bags-12.webp"/></article><article class="category-card"><img alt="Çantë kartoni kraft e personalizuar për Lahuta e Vjetër" loading="lazy" src="assets/images/bags-13.webp"/></article></div></div>
+</div>
+<div aria-label="Kategoritë e bizneseve" class="text-marquee-shell reveal">
+<div class="text-marquee-track">
+<div class="text-marquee-set"><span>Supermarkete</span><span>Dyqane veshjesh dhe butike</span><span>Dyqane këpucësh</span><span>Dyqane kozmetike dhe parfumeri</span><span>Farmaci</span><span>Dyqane bizhuterish</span><span>Furra buke</span><span>Pastiçeri</span><span>Restorante</span><span>Fast food</span><span>Pizzeri</span><span>Kafene dhe coffee shops</span><span>Take away</span><span>Dyqane dhuratash</span><span>Librari</span><span>Dyqane elektronike</span><span>Dyqane telefonie</span><span>Kantina vere dhe dyqane pijesh</span><span>Hotele</span><span>Spa dhe sallone bukurie</span><span>Klinika dhe qendra mjekësore</span><span>Evente dhe panaire</span></div>
+<div aria-hidden="true" class="text-marquee-set"><span>Supermarkete</span><span>Dyqane veshjesh dhe butike</span><span>Dyqane këpucësh</span><span>Dyqane kozmetike dhe parfumeri</span><span>Farmaci</span><span>Dyqane bizhuterish</span><span>Furra buke</span><span>Pastiçeri</span><span>Restorante</span><span>Fast food</span><span>Pizzeri</span><span>Kafene dhe coffee shops</span><span>Take away</span><span>Dyqane dhuratash</span><span>Librari</span><span>Dyqane elektronike</span><span>Dyqane telefonie</span><span>Kantina vere dhe dyqane pijesh</span><span>Hotele</span><span>Spa dhe sallone bukurie</span><span>Klinika dhe qendra mjekësore</span><span>Evente dhe panaire</span></div>
+</div>
+</div>
+<div class="container info-notes reveal">
+<span>MBI 23 KATEGORI BIZNESESH TË MBULUARA</span>
+<span>ÇANTA LETRE ME BAZË TË GJERË, MBROJTËSE &amp; REZISTENTE</span>
+</div>
+</section>
+<section class="section boxes-section">
+<div class="container narrow reveal">
+<p class="section-label">MBROJTJE &amp; ESTETIKË</p>
+<h2 class="boxes-title"><span class="title-line">Llojet e kutive që</span><span class="title-line">prodhojmë</span></h2>
+<p class="section-intro">Shembuj të kutive tona të personalizuara për farmaci, pizzeri, dhurata dhe produkte të ndryshme.</p>
+</div>
+<div aria-label="Llojet e kutive që prodhojmë" class="box-slider-shell slider-shell reveal">
+<div class="slider-track"><div class="slider-set"><article class="category-card"><img alt="Kuti produktesh për Bliss Pharma" loading="lazy" src="assets/images/boxes-01.webp"/></article><article class="category-card"><img alt="Kuti pice e personalizuar për Almond Pizza &amp; Grill" loading="lazy" src="assets/images/boxes-02.webp"/></article><article class="category-card"><img alt="Kuti dhuratash e personalizuar për Beauty Store Fashion" loading="lazy" src="assets/images/boxes-03.webp"/></article></div><div aria-hidden="true" class="slider-set"><article class="category-card"><img alt="Kuti produktesh për Bliss Pharma" loading="lazy" src="assets/images/boxes-01.webp"/></article><article class="category-card"><img alt="Kuti pice e personalizuar për Almond Pizza &amp; Grill" loading="lazy" src="assets/images/boxes-02.webp"/></article><article class="category-card"><img alt="Kuti dhuratash e personalizuar për Beauty Store Fashion" loading="lazy" src="assets/images/boxes-03.webp"/></article></div></div>
+</div>
+<div aria-label="Llojet e kutive" class="text-marquee-shell boxes-text-marquee reveal">
+<div class="text-marquee-track">
+<div class="text-marquee-set"><span>Kuti picash</span><span>Kuti burgeri</span><span>Kuti për patate</span><span>Kuti për ëmbëlsira</span><span>Kuti për pasta</span><span>Kuti për takeaway</span><span>Kuti për produkte</span><span>Kuti për dërgesa</span><span>Kuti të personalizuara me logo dhe përmasa sipas kërkesës</span></div>
+<div aria-hidden="true" class="text-marquee-set"><span>Kuti picash</span><span>Kuti burgeri</span><span>Kuti për patate</span><span>Kuti për ëmbëlsira</span><span>Kuti për pasta</span><span>Kuti për takeaway</span><span>Kuti për produkte</span><span>Kuti për dërgesa</span><span>Kuti të personalizuara me logo dhe përmasa sipas kërkesës</span></div>
+</div>
+</div>
+</section>
+<section class="section products-extra">
+<div class="container narrow reveal">
+<p class="section-label">Zgjidhje shtesë</p>
+<h2 class="other-products-title">Produkte të tjera</h2>
+<p class="section-intro">Përveç çantave dhe kutive, personalizojmë edhe mbajtëse takëmesh, qese furre, qese courier dhe produkte të tjera për restorante e biznese.</p>
+</div>
+<figure class="container wide-image reveal">
+<img alt="Placemat i personalizuar për Aura" src="assets/images/other-04.webp"/>
+</figure>
+</section>
+<section class="section branding-section">
+<div class="container branding-layout">
+
+<div class="branding-copy reveal">
+<p class="section-label">Detajet që bëjnë diferencën</p>
+<h2 class="branding-title">Etiketa dhe branding</h2>
+<blockquote>“Zgjidhje branding që e bëjnë paketimin tuaj të dallohet.”</blockquote>
+<p>Prodhojmë etiketa dhe sticker-a që e bëjnë paketimin tuaj më profesional, më të dallueshëm dhe të lehtë për t’u aplikuar në çdo sipërfaqe.</p>
+</div>
+</div>
+<div class="container icon-grid">
+<article class="icon-card reveal">
+<span aria-hidden="true" class="line-icon"><svg viewbox="0 0 24 24"><path d="M5 5h14v14H5z"></path><path d="M8 12h8M8 16h5"></path></svg></span>
+<h3>ETIKETA NGJITËSE</h3>
+<p>Stickers kraft ose plastikë për shishe, kavanozë dhe kuti.</p>
+</article>
+<article class="icon-card reveal">
+<span aria-hidden="true" class="line-icon"><svg viewbox="0 0 24 24"><path d="M6 7h12l2 5-8 7-8-7z"></path><path d="M9 7l3 12 3-12"></path></svg></span>
+<h3>STICKERS 3D (EPOXY)</h3>
+<p>Ngjitëse 3D me shkëlqim premium dhe rezistencë të lartë.</p>
+</article>
+<article class="icon-card reveal">
+<span aria-hidden="true" class="line-icon"><svg viewbox="0 0 24 24"><path d="M7 3h8l4 4v14H7z"></path><path d="M15 3v5h5"></path><path d="M10 14h6"></path></svg></span>
+<h3>ETIKETA TË VARURA</h3>
+<p>Etiketa kartoni për butike, dhurata dhe paketim premium.</p>
+</article>
+</div>
+</section>
+<section class="section" id="sherbime">
+<div class="container reveal">
+<p class="section-label">ÇFARË OFROJMË</p>
+<h2>SHËRBIMET TONA</h2>
+</div>
+<div class="container service-list">
+<article class="service-row reveal">
+<span>01 / 04</span>
+<h3>PRODHIM KLISHE (FLEXO CLICHES)</h3>
+<p>Klishe Flexo për printim të pastër në çdo ambalazh.</p>
+</article>
+<article class="service-row reveal">
+<span>02 / 04</span>
+<h3>KONSULENCË PËR AMBALAZH</h3>
+<p>Zgjedhim materialin dhe formatin ideal për produktin tuaj.</p>
+</article>
+<article class="service-row reveal">
+<span>03 / 04</span>
+<h3>ZGJIDHJE TË PERSONALIZUARA</h3>
+<p>Përmasa dhe forma speciale sipas nevojës së biznesit tuaj.</p>
+</article>
+<article class="service-row reveal">
+<span>04 / 04</span>
+<h3>SHPËRNDARJE NË TË GJITHË SHQIPËRINË</h3>
+<p>Dorëzim i shpejtë në çdo qytet të Shqipërisë.</p>
+</article>
+</div>
+</section>
+<section class="section centered-section">
+<div class="container narrow reveal">
+<p class="section-label">PËRFITIMET TUAJA</p>
+<h2 class="criteria-title">Pse të zgjidhni EcoPack?</h2>
+</div>
+<div class="container criteria-grid">
+<article class="criteria-card reveal">
+<span>KRITERI 01</span>
+<h3>DORËZIM PËR 24 ORË</h3>
+<p>Porosia dorëzohet brenda 24 orëve.</p>
+</article>
+<article class="criteria-card reveal">
+<span>KRITERI 02</span>
+<h3>PA KOSTO KLISHE (FALAS)</h3>
+<p>Pa tarifë shtesë për klishe.</p>
+</article>
+<article class="criteria-card reveal">
+<span>KRITERI 03</span>
+<h3>DESIGN SHUMËNGJYRËSH PA KOSTO</h3>
+<p>Printim shumëngjyrësh pa kosto shtesë.</p>
+</article>
+<article class="criteria-card reveal">
+<span>KRITERI 04</span>
+<h3>PERSONALIZIM ME LOGO</h3>
+<p>Logo e printuar me cilësi premium.</p>
+</article>
+<article class="criteria-card reveal">
+<span>KRITERI 05</span>
+<h3>ZGJIDHJE PËR ÇDO BIZNES</h3>
+<p>Zgjidhje për butikë, restorante dhe më shumë.</p>
+</article>
+<article class="criteria-card reveal">
+<span>KRITERI 06</span>
+<h3>ECO-FRIENDLY &amp; TË RICIKLUESHME</h3>
+<p>Materiale ekologjike dhe të riciklueshme.</p>
+</article>
+</div>
+</section>
+<section class="section process-section">
+<div class="container narrow reveal">
+<p class="section-label">Proces i thjeshtë</p>
+<h2 class="process-title">Si funksionon porosia</h2>
+</div>
+<div class="container process-grid">
+<article class="process-step reveal">
+<span class="step-number">01</span>
+<h3>Dërgoni kërkesën tuaj</h3>
+<p>Na dërgoni logon, përmasat dhe sasinë në WhatsApp.</p>
+</article>
+<article class="process-step reveal">
+<span class="step-number">02</span>
+<h3>Përgatisim dizajnin</h3>
+<p>Përgatisim dizajnin falas për aprovim.</p>
+</article>
+<article class="process-step reveal">
+<span class="step-number">03</span>
+<h3>Prodhojmë ambalazhin</h3>
+<p>Pas aprovimit, nis menjëherë prodhimi.</p>
+</article>
+<article class="process-step reveal">
+<span class="step-number">04</span>
+<h3>Dorëzojmë porosinë</h3>
+<p>Porosia arrin brenda 24 orëve.</p>
+</article>
+</div>
+<div class="container cta-box reveal">
+<div>
+<h3>GATI PËR TË NISUR PROJEKTIN TUAJ?</h3>
+<p>Konsulenca dhe përgatitja e dizajnit me logon tuaj janë 100% falas dhe pa asnjë detyrim. Na dërgoni kërkesën tuaj sot në WhatsApp.</p>
+</div>
+<a class="btn btn-primary btn-chat" href="https://wa.me/355692059212" rel="noopener" target="_blank"><span aria-hidden="true">□</span> POROSIT NË WHATSAPP</a>
+</div>
+</section>
+</main>
+<footer class="site-footer" id="kontakti">
+<div class="container footer-grid">
+<div>
+<a class="logo footer-logo" href="#top"><span class="logo-eco">ECO</span><span class="logo-pack">PACK</span><span class="logo-line">|</span><span class="logo-shpk">SHPK</span></a>
+<p>EcoPack është lider në prodhimin e çantave të personalizuara të kartonit, kutive, gotave dhe zgjidhjeve të branding për qindra biznese në Shqipëri. Partneri juaj për ambalazhe profesionale dhe ekologjike.</p>
+</div>
+<div>
+<h3>LINQE TË SHPEJTA</h3>
+<a href="#ballina">Ballina</a>
+<a href="#rreth-nesh">Rreth Nesh</a>
+<a href="#produktet">Produktet tona</a>
+<a href="#sherbime">Shërbime &amp; Konsulencë</a>
+<a href="#kontakti">Na Kontaktoni</a>
+</div>
+<div>
+<h3>ECOPACK SHPK</h3>
+<p>Përballë Nirvana Resort, Fushë Krujë, Albania</p>
+<p>Cel: <a href="tel:+355692059212">+355 69 205 9212</a></p>
+<p>Email: <a href="mailto:info@ecopack.al">info@ecopack.al</a></p>
+</div>
+</div>
+<div class="container footer-bottom">
+<p>© 2026 EcoPack. Të gjitha të drejtat e rezervuara.</p>
+<button class="back-top" data-back-top="" type="button">KTHEHU NË KRYE ↑</button>
+</div>
+</footer>
+<script>
+(function () {
+  const header = document.querySelector('[data-header]');
+  const toggle = document.querySelector('[data-menu-toggle]');
+  const panel = document.querySelector('[data-mobile-panel]');
+  const links = document.querySelectorAll('a[href^="#"]');
+  const backTop = document.querySelector('[data-back-top]');
+  const form = document.querySelector('[data-request-form]');
+  const status = document.querySelector('[data-form-status]');
+
+  function updateHeader() {
+    if (!header) return;
+    header.classList.toggle('is-scrolled', window.scrollY > 10);
+  }
+
+  updateHeader();
+  window.addEventListener('scroll', updateHeader, { passive: true });
+
+  if (toggle && panel) {
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      toggle.classList.toggle('is-open', !open);
+      panel.classList.toggle('is-open', !open);
+      document.body.classList.toggle('menu-open', !open);
+    });
+
+    panel.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.classList.remove('is-open');
+        panel.classList.remove('is-open');
+        document.body.classList.remove('menu-open');
+      });
+    });
+  }
+
+  links.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const targetId = link.getAttribute('href');
+      if (!targetId || targetId.length < 2) return;
+      const target = document.querySelector(targetId);
+      if (!target) return;
+      event.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  if (backTop) {
+    backTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  const revealItems = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && revealItems.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    revealItems.forEach((item) => observer.observe(item));
+  } else {
+    revealItems.forEach((item) => item.classList.add('is-visible'));
+  }
+
+  if (form && status) {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      status.classList.remove('error');
+
+      const requiredFields = form.querySelectorAll('[required]');
+      let isValid = true;
+      requiredFields.forEach((field) => {
+        if (!field.value.trim()) {
+          isValid = false;
+          field.setAttribute('aria-invalid', 'true');
+        } else {
+          field.removeAttribute('aria-invalid');
+        }
+      });
+
+      const emailField = form.querySelector('input[type="email"]');
+      if (emailField && emailField.value.trim() && !emailField.checkValidity()) {
+        isValid = false;
+        emailField.setAttribute('aria-invalid', 'true');
+      }
+
+      if (!isValid) {
+        status.textContent = 'Ju lutemi plotësoni fushat e detyrueshme para dërgimit.';
+        status.classList.add('error');
+        return;
+      }
+
+      const data = new FormData(form);
+      const message = [
+        'Përshëndetje EcoPack, dua të dërgoj një kërkesë për ambalazh.',
+        '',
+        `Emri: ${data.get('name') || ''}`,
+        `Telefoni: ${data.get('phone') || ''}`,
+        `Email: ${data.get('email') || 'Nuk është vendosur'}`,
+        '',
+        `Specifikimet: ${data.get('message') || ''}`
+      ].join('\n');
+
+      status.textContent = 'Kërkesa u përgatit. Po hapet WhatsApp për dërgim.';
+      const whatsappUrl = `https://wa.me/355692059212?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank', 'noopener');
+      form.reset();
+    });
+  }
+})();
+
+  </script>
+</body>
+</html>
