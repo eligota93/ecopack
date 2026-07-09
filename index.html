@@ -1112,6 +1112,14 @@ input::placeholder,textarea::placeholder{color:#9aa39e}
   .other-products-grid{grid-template-columns:1fr;gap:16px}
   .other-product-card img{height:auto;max-height:520px;object-fit:contain;background:#fff}
 }
+
+
+/* Home hero image fix */
+.hero-overlay-products{display:none!important}
+.hero-base-image{display:block}
+@media (max-width:759px){
+  .hero-image{display:none!important}
+}
 </style>
 </head>
 <body id="top">
@@ -1161,8 +1169,8 @@ input::placeholder,textarea::placeholder{color:#9aa39e}
 </div>
 <figure class="hero-image reveal">
 <div class="hero-visual">
-<img alt="Eco Pack home image" class="hero-base-image" src="assets/images/img-001.webp"/>
-<img alt="Çanta dhe kuti EcoPack" class="hero-overlay-products" loading="eager" src="assets/images/img-002.webp"/>
+<img alt="Paketime EcoPack prej kartoni dhe letre" class="hero-base-image" src="assets/images/img-001.webp"/>
+
 </div>
 </figure>
 </div>
